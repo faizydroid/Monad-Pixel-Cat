@@ -1,0 +1,119 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: white;  /* Set background to white */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333; /* Dark color for readability */
+}
+
+header {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.header-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    color: #4CAF50;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.wallet-button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.wallet-button:hover {
+    background-color: #218838;
+}
+
+.cat-image-container {
+    text-align: center;
+    margin-top: 120px; /* Move image container down */
+}
+
+canvas {
+    border: 3px solid #4CAF50; /* Green border for better contrast */
+    margin-top: 20px;
+    background-color: #fff;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Increase canvas size */
+    height: 300px; /* Increase canvas size */
+    transition: transform 0.2s ease;
+}
+
+canvas:hover {
+    transform: scale(1.05);
+}
+
+.buttons {
+    margin-top: 30px;
+    text-align: center;
+}
+
+button {
+    font-size: 1.2rem;
+    padding: 12px 24px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.generate-btn {
+    background-color: #007bff;
+    color: white;
+}
+
+.generate-btn:hover {
+    background-color: #0056b3;
+}
+
+.mint-btn {
+    background-color: #28a745;
+    color: white;
+    cursor: not-allowed;
+}
+
+.mint-btn:enabled {
+    cursor: pointer;
+}
+
+.mint-btn:enabled:hover {
+    background-color: #218838;
+}
+
+#mint-status {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: yellow;
+}

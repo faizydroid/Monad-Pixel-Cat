@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pixel Cat Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1 class="header-title">Pixel Cat Generator</h1>
+            <button id="connect-wallet" class="wallet-button">Connect Wallet</button>
+        </div>
+    </header>
+
+    <main>
+        <div id="cat-image-container" class="cat-image-container">
+            <p>Click below to generate a random pixel art cat!</p>
+            <canvas id="cat-canvas"></canvas>
+        </div>
+
+        <div class="buttons">
+            <button id="generate-button" class="generate-btn">Generate Cat</button>
+            <button id="mint-button" class="mint-btn" disabled>Mint Cat as NFT</button>
+        </div>
+
+        <div id="mint-status"></div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
